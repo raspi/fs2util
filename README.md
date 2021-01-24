@@ -1,8 +1,9 @@
 # fs2util
 FreeSpace 2 util for command line
 
-* Extract `.VP` files
-* Get checksums inside `.VP` files 
+* Extract files inside `.VP` file
+* Get file checksums inside `.VP` file
+* Show file information inside `.VP` file
 
 # Requirements
 * Operating system
@@ -41,6 +42,172 @@ Examples:
 ```
 
 # Example
+
+## Extract files from `.vp`:
+
+```
+% ./fs2util -x Root_fs2.vp
+Extracted file data/tables/ai.tbl size:1874 bytes, offset:16 (1999-10-28 07:14:14 +0000 UTC) to extracted/Root_fs2.vp/data/tables/ai.tbl
+Extracted file data/tables/asteroid.tbl size:4309 bytes, offset:1890 (1999-10-28 07:14:14 +0000 UTC) to extracted/Root_fs2.vp/data/tables/asteroid.tbl
+Extracted file data/tables/credits.tbl size:8542 bytes, offset:6199 (1999-11-01 20:09:40 +0000 UTC) to extracted/Root_fs2.vp/data/tables/credits.tbl
+Extracted file data/tables/cutscenes.tbl size:2402 bytes, offset:14741 (1999-10-28 07:14:14 +0000 UTC) to extracted/Root_fs2.vp/data/tables/cutscenes.tbl
+Extracted file data/tables/fireball.tbl size:531 bytes, offset:17143 (1999-10-28 07:14:14 +0000 UTC) to extracted/Root_fs2.vp/data/tables/fireball.tbl
+Extracted file data/tables/help.tbl size:14099 bytes, offset:17674 (1999-10-28 07:14:14 +0000 UTC) to extracted/Root_fs2.vp/data/tables/help.tbl
+Extracted file data/tables/hud.tbl size:800 bytes, offset:31773 (1999-10-28 07:14:14 +0000 UTC) to extracted/Root_fs2.vp/data/tables/hud.tbl
+Extracted file data/tables/icons.tbl size:14261 bytes, offset:32573 (1999-10-28 07:14:14 +0000 UTC) to extracted/Root_fs2.vp/data/tables/icons.tbl
+Extracted file data/tables/launchhelp.tbl size:4374 bytes, offset:46834 (1999-10-28 07:14:16 +0000 UTC) to extracted/Root_fs2.vp/data/tables/launchhelp.tbl
+Extracted file data/tables/lightning.tbl size:5788 bytes, offset:51208 (1999-10-28 07:14:16 +0000 UTC) to extracted/Root_fs2.vp/data/tables/lightning.tbl
+Extracted file data/tables/mainhall.tbl size:18121 bytes, offset:56996 (1999-10-28 07:14:16 +0000 UTC) to extracted/Root_fs2.vp/data/tables/mainhall.tbl
+Extracted file data/tables/medals.tbl size:1947 bytes, offset:75117 (1999-10-28 07:14:16 +0000 UTC) to extracted/Root_fs2.vp/data/tables/medals.tbl
+Extracted file data/tables/menu.tbl size:1962 bytes, offset:77064 (1999-10-28 07:14:16 +0000 UTC) to extracted/Root_fs2.vp/data/tables/menu.tbl
+Extracted file data/tables/messages.tbl size:34028 bytes, offset:79026 (1999-10-28 07:14:16 +0000 UTC) to extracted/Root_fs2.vp/data/tables/messages.tbl
+Extracted file data/tables/mflash.tbl size:597 bytes, offset:113054 (1999-10-28 07:14:16 +0000 UTC) to extracted/Root_fs2.vp/data/tables/mflash.tbl
+Extracted file data/tables/music.tbl size:7287 bytes, offset:113651 (1999-10-28 07:14:16 +0000 UTC) to extracted/Root_fs2.vp/data/tables/music.tbl
+Extracted file data/tables/nebula.tbl size:440 bytes, offset:120938 (1999-10-28 07:14:16 +0000 UTC) to extracted/Root_fs2.vp/data/tables/nebula.tbl
+Extracted file data/tables/pixels.tbl size:81 bytes, offset:121378 (1999-10-28 07:14:16 +0000 UTC) to extracted/Root_fs2.vp/data/tables/pixels.tbl
+Extracted file data/tables/rank.tbl size:3397 bytes, offset:121459 (1999-10-28 07:14:16 +0000 UTC) to extracted/Root_fs2.vp/data/tables/rank.tbl
+Extracted file data/tables/ships.tbl size:383719 bytes, offset:124856 (1999-10-28 07:14:16 +0000 UTC) to extracted/Root_fs2.vp/data/tables/ships.tbl
+Extracted file data/tables/sounds.tbl size:20735 bytes, offset:508575 (1999-11-17 20:13:26 +0000 UTC) to extracted/Root_fs2.vp/data/tables/sounds.tbl
+Extracted file data/tables/Species.tbl size:16708 bytes, offset:529310 (1999-10-28 07:14:16 +0000 UTC) to extracted/Root_fs2.vp/data/tables/Species.tbl
+Extracted file data/tables/ssm.tbl size:45 bytes, offset:546018 (1999-10-28 07:14:16 +0000 UTC) to extracted/Root_fs2.vp/data/tables/ssm.tbl
+Extracted file data/tables/stars.tbl size:1910 bytes, offset:546063 (1999-10-28 07:14:16 +0000 UTC) to extracted/Root_fs2.vp/data/tables/stars.tbl
+Extracted file data/tables/strings.tbl size:235241 bytes, offset:547973 (1999-11-02 16:27:22 +0000 UTC) to extracted/Root_fs2.vp/data/tables/strings.tbl
+Extracted file data/tables/tips.tbl size:4390 bytes, offset:783214 (1999-10-28 07:14:16 +0000 UTC) to extracted/Root_fs2.vp/data/tables/tips.tbl
+Extracted file data/tables/traitor.tbl size:665 bytes, offset:787604 (1999-10-28 07:14:16 +0000 UTC) to extracted/Root_fs2.vp/data/tables/traitor.tbl
+Extracted file data/tables/tstrings.tbl size:984199 bytes, offset:788269 (1999-11-11 21:07:26 +0000 UTC) to extracted/Root_fs2.vp/data/tables/tstrings.tbl
+Extracted file data/tables/weapon_expl.tbl size:228 bytes, offset:1772468 (1999-10-28 07:14:16 +0000 UTC) to extracted/Root_fs2.vp/data/tables/weapon_expl.tbl
+Extracted file data/tables/weapons.tbl size:259791 bytes, offset:1772696 (1999-10-28 07:14:16 +0000 UTC) to extracted/Root_fs2.vp/data/tables/weapons.tbl
+Extracted file data/tables/vssver.scc size:512 bytes, offset:2032487 (1999-11-02 03:55:16 +0000 UTC) to extracted/Root_fs2.vp/data/tables/vssver.scc
+Extracted file data/missions/G-Shi.fs2 size:43642 bytes, offset:2032999 (1999-11-02 03:57:28 +0000 UTC) to extracted/Root_fs2.vp/data/missions/G-Shi.fs2
+Extracted file data/missions/G-Ter.fs2 size:43671 bytes, offset:2076641 (1999-11-02 03:57:28 +0000 UTC) to extracted/Root_fs2.vp/data/missions/G-Ter.fs2
+Extracted file data/missions/G-Vas.fs2 size:42306 bytes, offset:2120312 (1999-11-02 03:57:28 +0000 UTC) to extracted/Root_fs2.vp/data/missions/G-Vas.fs2
+Extracted file data/missions/loop1-1.fs2 size:59582 bytes, offset:2162618 (1999-11-02 03:57:28 +0000 UTC) to extracted/Root_fs2.vp/data/missions/loop1-1.fs2
+Extracted file data/missions/loop1-2.fs2 size:114569 bytes, offset:2222200 (1999-11-02 03:57:28 +0000 UTC) to extracted/Root_fs2.vp/data/missions/loop1-2.fs2
+Extracted file data/missions/loop1-3.fs2 size:58172 bytes, offset:2336769 (1999-11-02 03:57:28 +0000 UTC) to extracted/Root_fs2.vp/data/missions/loop1-3.fs2
+Extracted file data/missions/loop2-1.fs2 size:61415 bytes, offset:2394941 (1999-11-02 03:57:28 +0000 UTC) to extracted/Root_fs2.vp/data/missions/loop2-1.fs2
+Extracted file data/missions/loop2-2.fs2 size:84727 bytes, offset:2456356 (1999-11-02 03:57:28 +0000 UTC) to extracted/Root_fs2.vp/data/missions/loop2-2.fs2
+Extracted file data/missions/M-01.fs2 size:31309 bytes, offset:2541083 (1999-11-02 03:57:28 +0000 UTC) to extracted/Root_fs2.vp/data/missions/M-01.fs2
+Extracted file data/missions/M-02.fs2 size:41218 bytes, offset:2572392 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/M-02.fs2
+Extracted file data/missions/M-03.fs2 size:59154 bytes, offset:2613610 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/M-03.fs2
+Extracted file data/missions/M-04.fs2 size:38628 bytes, offset:2672764 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/M-04.fs2
+Extracted file data/missions/MDH-01.fs2 size:17922 bytes, offset:2711392 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/MDH-01.fs2
+Extracted file data/missions/MDH-02.fs2 size:17138 bytes, offset:2729314 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/MDH-02.fs2
+Extracted file data/missions/MDH-03.fs2 size:17765 bytes, offset:2746452 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/MDH-03.fs2
+Extracted file data/missions/MDH-04.fs2 size:17627 bytes, offset:2764217 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/MDH-04.fs2
+Extracted file data/missions/MDH-05.fs2 size:19905 bytes, offset:2781844 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/MDH-05.fs2
+Extracted file data/missions/MDH-06.fs2 size:17749 bytes, offset:2801749 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/MDH-06.fs2
+Extracted file data/missions/MDH-07.fs2 size:13682 bytes, offset:2819498 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/MDH-07.fs2
+Extracted file data/missions/mdH-08.fs2 size:15115 bytes, offset:2833180 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/mdH-08.fs2
+Extracted file data/missions/mdH-09.fs2 size:17542 bytes, offset:2848295 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/mdH-09.fs2
+Extracted file data/missions/MDL-01.fs2 size:17791 bytes, offset:2865837 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/MDL-01.fs2
+Extracted file data/missions/MDL-02.fs2 size:16993 bytes, offset:2883628 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/MDL-02.fs2
+Extracted file data/missions/MDL-03.fs2 size:17867 bytes, offset:2900621 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/MDL-03.fs2
+Extracted file data/missions/MDL-04.fs2 size:17745 bytes, offset:2918488 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/MDL-04.fs2
+Extracted file data/missions/MDL-05.fs2 size:20006 bytes, offset:2936233 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/MDL-05.fs2
+Extracted file data/missions/MDL-06.fs2 size:17868 bytes, offset:2956239 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/MDL-06.fs2
+Extracted file data/missions/MDL-07.fs2 size:13789 bytes, offset:2974107 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/MDL-07.fs2
+Extracted file data/missions/mdL-08.fs2 size:15205 bytes, offset:2987896 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/mdL-08.fs2
+Extracted file data/missions/mdL-09.fs2 size:17661 bytes, offset:3003101 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/mdL-09.fs2
+Extracted file data/missions/MDM-01.fs2 size:18169 bytes, offset:3020762 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/MDM-01.fs2
+Extracted file data/missions/MDM-02.fs2 size:17372 bytes, offset:3038931 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/MDM-02.fs2
+Extracted file data/missions/MDM-03.fs2 size:18248 bytes, offset:3056303 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/MDM-03.fs2
+Extracted file data/missions/MDM-04.fs2 size:18119 bytes, offset:3074551 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/MDM-04.fs2
+Extracted file data/missions/MDM-05.fs2 size:20393 bytes, offset:3092670 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/MDM-05.fs2
+Extracted file data/missions/MDM-06.fs2 size:18243 bytes, offset:3113063 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/MDM-06.fs2
+Extracted file data/missions/MDM-07.fs2 size:14165 bytes, offset:3131306 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/MDM-07.fs2
+Extracted file data/missions/mdM-08.fs2 size:15599 bytes, offset:3145471 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/mdM-08.fs2
+Extracted file data/missions/mdM-09.fs2 size:18051 bytes, offset:3161070 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/mdM-09.fs2
+Extracted file data/missions/MT-01.fs2 size:27140 bytes, offset:3179121 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/MT-01.fs2
+Extracted file data/missions/MT-02.fs2 size:26610 bytes, offset:3206261 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/MT-02.fs2
+Extracted file data/missions/MT-03.fs2 size:28498 bytes, offset:3232871 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/MT-03.fs2
+Extracted file data/missions/MT-04.fs2 size:17882 bytes, offset:3261369 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/MT-04.fs2
+Extracted file data/missions/MT-05.fs2 size:37392 bytes, offset:3279251 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/MT-05.fs2
+Extracted file data/missions/MT-06.fs2 size:15934 bytes, offset:3316643 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/MT-06.fs2
+Extracted file data/missions/MT-07.fs2 size:21556 bytes, offset:3332577 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/MT-07.fs2
+Extracted file data/missions/MT-08.fs2 size:17620 bytes, offset:3354133 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/MT-08.fs2
+Extracted file data/missions/MT-09.fs2 size:14388 bytes, offset:3371753 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/MT-09.fs2
+Extracted file data/missions/MT-10.fs2 size:19286 bytes, offset:3386141 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/MT-10.fs2
+Extracted file data/missions/OSDog.fs2 size:19388 bytes, offset:3405427 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/OSDog.fs2
+Extracted file data/missions/SM1-01.fs2 size:68242 bytes, offset:3424815 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/SM1-01.fs2
+Extracted file data/missions/SM1-02.fs2 size:72067 bytes, offset:3493057 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/SM1-02.fs2
+Extracted file data/missions/SM1-03.fs2 size:57855 bytes, offset:3565124 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/SM1-03.fs2
+Extracted file data/missions/SM1-04.fs2 size:75736 bytes, offset:3622979 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/SM1-04.fs2
+Extracted file data/missions/SM1-05.fs2 size:82941 bytes, offset:3698715 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/SM1-05.fs2
+Extracted file data/missions/SM1-06.fs2 size:67908 bytes, offset:3781656 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/SM1-06.fs2
+Extracted file data/missions/SM1-07.fs2 size:51290 bytes, offset:3849564 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/SM1-07.fs2
+Extracted file data/missions/SM1-08.fs2 size:67506 bytes, offset:3900854 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/SM1-08.fs2
+Extracted file data/missions/SM1-09.fs2 size:86239 bytes, offset:3968360 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/SM1-09.fs2
+Extracted file data/missions/SM1-10.fs2 size:67658 bytes, offset:4054599 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/SM1-10.fs2
+Extracted file data/missions/SM2-01.fs2 size:62708 bytes, offset:4122257 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/SM2-01.fs2
+Extracted file data/missions/SM2-02.fs2 size:56674 bytes, offset:4184965 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/SM2-02.fs2
+Extracted file data/missions/SM2-03.fs2 size:61816 bytes, offset:4241639 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/SM2-03.fs2
+Extracted file data/missions/SM2-04.fs2 size:72553 bytes, offset:4303455 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/SM2-04.fs2
+Extracted file data/missions/SM2-05.fs2 size:71511 bytes, offset:4376008 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/SM2-05.fs2
+Extracted file data/missions/SM2-06.fs2 size:71655 bytes, offset:4447519 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/SM2-06.fs2
+Extracted file data/missions/SM2-07.fs2 size:70704 bytes, offset:4519174 (1999-11-04 20:52:28 +0000 UTC) to extracted/Root_fs2.vp/data/missions/SM2-07.fs2
+Extracted file data/missions/SM2-08.fs2 size:53983 bytes, offset:4589878 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/SM2-08.fs2
+Extracted file data/missions/SM2-09.fs2 size:53565 bytes, offset:4643861 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/SM2-09.fs2
+Extracted file data/missions/sm2-10.fs2 size:85760 bytes, offset:4697426 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/sm2-10.fs2
+Extracted file data/missions/SM3-01.fs2 size:77854 bytes, offset:4783186 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/SM3-01.fs2
+Extracted file data/missions/sm3-02.fs2 size:42113 bytes, offset:4861040 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/sm3-02.fs2
+Extracted file data/missions/SM3-03.fs2 size:79484 bytes, offset:4903153 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/SM3-03.fs2
+Extracted file data/missions/SM3-04.fs2 size:64871 bytes, offset:4982637 (1999-11-02 03:57:30 +0000 UTC) to extracted/Root_fs2.vp/data/missions/SM3-04.fs2
+Extracted file data/missions/SM3-05.fs2 size:87235 bytes, offset:5047508 (1999-11-02 03:57:32 +0000 UTC) to extracted/Root_fs2.vp/data/missions/SM3-05.fs2
+Extracted file data/missions/SM3-06.fs2 size:79601 bytes, offset:5134743 (1999-11-02 03:57:32 +0000 UTC) to extracted/Root_fs2.vp/data/missions/SM3-06.fs2
+Extracted file data/missions/SM3-07.fs2 size:97275 bytes, offset:5214344 (1999-11-02 03:57:32 +0000 UTC) to extracted/Root_fs2.vp/data/missions/SM3-07.fs2
+Extracted file data/missions/SM3-08.fs2 size:84092 bytes, offset:5311619 (1999-11-02 03:57:32 +0000 UTC) to extracted/Root_fs2.vp/data/missions/SM3-08.fs2
+Extracted file data/missions/sm3-09.fs2 size:78558 bytes, offset:5395711 (1999-11-02 03:57:32 +0000 UTC) to extracted/Root_fs2.vp/data/missions/sm3-09.fs2
+Extracted file data/missions/sm3-10.fs2 size:101883 bytes, offset:5474269 (1999-11-02 03:57:32 +0000 UTC) to extracted/Root_fs2.vp/data/missions/sm3-10.fs2
+Extracted file data/missions/Templar-01.fs2 size:49062 bytes, offset:5576152 (1999-11-02 03:57:32 +0000 UTC) to extracted/Root_fs2.vp/data/missions/Templar-01.fs2
+Extracted file data/missions/Templar-02.fs2 size:48699 bytes, offset:5625214 (1999-11-02 03:57:32 +0000 UTC) to extracted/Root_fs2.vp/data/missions/Templar-02.fs2
+Extracted file data/missions/Templar-03.fs2 size:65106 bytes, offset:5673913 (1999-11-02 03:57:32 +0000 UTC) to extracted/Root_fs2.vp/data/missions/Templar-03.fs2
+Extracted file data/missions/Templar-04.fs2 size:56363 bytes, offset:5739019 (1999-11-02 03:57:32 +0000 UTC) to extracted/Root_fs2.vp/data/missions/Templar-04.fs2
+Extracted file data/missions/Training-1.fs2 size:35107 bytes, offset:5795382 (1999-11-02 03:57:32 +0000 UTC) to extracted/Root_fs2.vp/data/missions/Training-1.fs2
+Extracted file data/missions/Training-2.fs2 size:37616 bytes, offset:5830489 (1999-11-02 03:57:32 +0000 UTC) to extracted/Root_fs2.vp/data/missions/Training-2.fs2
+Extracted file data/missions/Training-3.fs2 size:38863 bytes, offset:5868105 (1999-11-02 03:57:32 +0000 UTC) to extracted/Root_fs2.vp/data/missions/Training-3.fs2
+Extracted file data/missions/TSM-104.fs2 size:51541 bytes, offset:5906968 (1999-11-02 03:57:32 +0000 UTC) to extracted/Root_fs2.vp/data/missions/TSM-104.fs2
+Extracted file data/missions/TSM-105.fs2 size:28534 bytes, offset:5958509 (1999-11-02 03:57:32 +0000 UTC) to extracted/Root_fs2.vp/data/missions/TSM-105.fs2
+Extracted file data/missions/TSM-106.fs2 size:46482 bytes, offset:5987043 (1999-11-02 03:57:32 +0000 UTC) to extracted/Root_fs2.vp/data/missions/TSM-106.fs2
+Extracted file data/missions/FreeSpace2.fc2 size:12617 bytes, offset:6033525 (1999-11-02 03:57:28 +0000 UTC) to extracted/Root_fs2.vp/data/missions/FreeSpace2.fc2
+Extracted file data/missions/Templar.fc2 size:2374 bytes, offset:6046142 (1999-11-02 03:57:32 +0000 UTC) to extracted/Root_fs2.vp/data/missions/Templar.fc2
+Extracted file data/players/images/Ter0001.pcx size:11138 bytes, offset:6048516 (1999-09-22 15:32:26 +0000 UTC) to extracted/Root_fs2.vp/data/players/images/Ter0001.pcx
+Extracted file data/players/images/Ter0002.pcx size:9224 bytes, offset:6059654 (1999-09-22 15:32:28 +0000 UTC) to extracted/Root_fs2.vp/data/players/images/Ter0002.pcx
+Extracted file data/players/images/Ter0003.pcx size:10501 bytes, offset:6068878 (1999-09-22 15:32:28 +0000 UTC) to extracted/Root_fs2.vp/data/players/images/Ter0003.pcx
+Extracted file data/players/images/Ter0004.pcx size:11287 bytes, offset:6079379 (1999-09-22 15:32:28 +0000 UTC) to extracted/Root_fs2.vp/data/players/images/Ter0004.pcx
+Extracted file data/players/images/Ter0005.pcx size:11120 bytes, offset:6090666 (1999-09-22 15:32:28 +0000 UTC) to extracted/Root_fs2.vp/data/players/images/Ter0005.pcx
+Extracted file data/players/images/Ter0006.pcx size:12220 bytes, offset:6101786 (1999-09-22 15:32:28 +0000 UTC) to extracted/Root_fs2.vp/data/players/images/Ter0006.pcx
+Extracted file data/players/images/Ter0007.pcx size:10999 bytes, offset:6114006 (1999-09-22 15:32:28 +0000 UTC) to extracted/Root_fs2.vp/data/players/images/Ter0007.pcx
+Extracted file data/players/images/Ter0008.pcx size:11592 bytes, offset:6125005 (1999-09-22 15:32:28 +0000 UTC) to extracted/Root_fs2.vp/data/players/images/Ter0008.pcx
+Extracted file data/players/images/Ter0009.pcx size:10046 bytes, offset:6136597 (1999-09-22 15:32:28 +0000 UTC) to extracted/Root_fs2.vp/data/players/images/Ter0009.pcx
+Extracted file data/players/images/Vas0001.pcx size:12438 bytes, offset:6146643 (1999-09-22 15:32:28 +0000 UTC) to extracted/Root_fs2.vp/data/players/images/Vas0001.pcx
+Extracted file data/players/images/Vas0002.pcx size:12124 bytes, offset:6159081 (1999-09-22 15:32:28 +0000 UTC) to extracted/Root_fs2.vp/data/players/images/Vas0002.pcx
+Extracted file data/players/images/Vas0003.pcx size:12147 bytes, offset:6171205 (1999-09-22 15:32:28 +0000 UTC) to extracted/Root_fs2.vp/data/players/images/Vas0003.pcx
+Extracted file data/players/images/vssver.scc size:224 bytes, offset:6183352 (1999-11-17 20:55:44 +0000 UTC) to extracted/Root_fs2.vp/data/players/images/vssver.scc
+Extracted file data/players/squads/242suicide.pcx size:8772 bytes, offset:6183576 (1999-09-22 15:32:28 +0000 UTC) to extracted/Root_fs2.vp/data/players/squads/242suicide.pcx
+Extracted file data/players/squads/77th.pcx size:6931 bytes, offset:6192348 (1999-09-22 15:32:28 +0000 UTC) to extracted/Root_fs2.vp/data/players/squads/77th.pcx
+Extracted file data/players/squads/barracudas.pcx size:12018 bytes, offset:6199279 (1999-09-22 15:32:28 +0000 UTC) to extracted/Root_fs2.vp/data/players/squads/barracudas.pcx
+Extracted file data/players/squads/DaBombInsig.pcx size:16783 bytes, offset:6211297 (1999-09-22 15:32:30 +0000 UTC) to extracted/Root_fs2.vp/data/players/squads/DaBombInsig.pcx
+Extracted file data/players/squads/deathsquad.pcx size:12973 bytes, offset:6228080 (1999-09-22 15:32:30 +0000 UTC) to extracted/Root_fs2.vp/data/players/squads/deathsquad.pcx
+Extracted file data/players/squads/desquad.pcx size:10287 bytes, offset:6241053 (1999-09-22 15:32:30 +0000 UTC) to extracted/Root_fs2.vp/data/players/squads/desquad.pcx
+Extracted file data/players/squads/hammer1.pcx size:6269 bytes, offset:6251340 (1999-09-22 15:32:30 +0000 UTC) to extracted/Root_fs2.vp/data/players/squads/hammer1.pcx
+Extracted file data/players/squads/jollyroger.pcx size:8266 bytes, offset:6257609 (1999-09-22 15:32:30 +0000 UTC) to extracted/Root_fs2.vp/data/players/squads/jollyroger.pcx
+Extracted file data/players/squads/lion1.pcx size:10232 bytes, offset:6265875 (1999-09-22 15:32:30 +0000 UTC) to extracted/Root_fs2.vp/data/players/squads/lion1.pcx
+Extracted file data/players/squads/raptors.pcx size:11142 bytes, offset:6276107 (1999-09-22 15:32:30 +0000 UTC) to extracted/Root_fs2.vp/data/players/squads/raptors.pcx
+Extracted file data/players/squads/ravens.pcx size:10219 bytes, offset:6287249 (1999-09-22 15:32:30 +0000 UTC) to extracted/Root_fs2.vp/data/players/squads/ravens.pcx
+Extracted file data/players/squads/rgrdgr1.pcx size:8970 bytes, offset:6297468 (1999-09-22 15:32:30 +0000 UTC) to extracted/Root_fs2.vp/data/players/squads/rgrdgr1.pcx
+Extracted file data/players/squads/rgrdgr2.pcx size:7850 bytes, offset:6306438 (1999-09-22 15:32:30 +0000 UTC) to extracted/Root_fs2.vp/data/players/squads/rgrdgr2.pcx
+Extracted file data/players/squads/scorpsquada.pcx size:7810 bytes, offset:6314288 (1999-09-22 15:32:30 +0000 UTC) to extracted/Root_fs2.vp/data/players/squads/scorpsquada.pcx
+Extracted file data/players/squads/scorpsquadb.pcx size:10641 bytes, offset:6322098 (1999-09-22 15:32:30 +0000 UTC) to extracted/Root_fs2.vp/data/players/squads/scorpsquadb.pcx
+Extracted file data/players/squads/scorpsquadc.pcx size:9471 bytes, offset:6332739 (1999-09-22 15:32:30 +0000 UTC) to extracted/Root_fs2.vp/data/players/squads/scorpsquadc.pcx
+Extracted file data/players/squads/scorpsquadd.pcx size:7117 bytes, offset:6342210 (1999-09-22 15:32:30 +0000 UTC) to extracted/Root_fs2.vp/data/players/squads/scorpsquadd.pcx
+Extracted file data/players/squads/sheepsquad.pcx size:9669 bytes, offset:6349327 (1999-09-22 15:32:30 +0000 UTC) to extracted/Root_fs2.vp/data/players/squads/sheepsquad.pcx
+Extracted file data/players/squads/skullsquada.pcx size:7678 bytes, offset:6358996 (1999-09-22 15:32:30 +0000 UTC) to extracted/Root_fs2.vp/data/players/squads/skullsquada.pcx
+Extracted file data/players/squads/tsusquad.pcx size:11214 bytes, offset:6366674 (1999-09-22 15:32:30 +0000 UTC) to extracted/Root_fs2.vp/data/players/squads/tsusquad.pcx
+Extracted file data/players/squads/vasudan1.pcx size:7212 bytes, offset:6377888 (1999-09-22 15:32:30 +0000 UTC) to extracted/Root_fs2.vp/data/players/squads/vasudan1.pcx
+Extracted file data/players/squads/volsquad.pcx size:7347 bytes, offset:6385100 (1999-09-22 15:32:30 +0000 UTC) to extracted/Root_fs2.vp/data/players/squads/volsquad.pcx
+Extracted file data/players/squads/vssver.scc size:384 bytes, offset:6392447 (1999-11-17 20:55:44 +0000 UTC) to extracted/Root_fs2.vp/data/players/squads/vssver.scc
+Extracted file data/pxohelp.txt size:4095 bytes, offset:6392831 (1999-09-22 15:17:30 +0000 UTC) to extracted/Root_fs2.vp/data/pxohelp.txt
+```
 
 ## Get checksums inside `.vp` file:
 
@@ -206,4 +373,169 @@ cee15c0ae5f9284e18446b6b1caa03335a5f6ba333ccac0d8b0e812ce14452a4  Root_fs2.vp/da
 411f29bd389e57c521ec14f229120467bab744984bec306590e8e7924bffea33  Root_fs2.vp/data/players/squads/volsquad.pcx
 ab0f42fb8c44c685d506dfbb1efc83ab183c307cd19e4d0127972bf521e98ffd  Root_fs2.vp/data/players/squads/vssver.scc
 cf73ca95128cff5569f88faedf731e5c434778b2874144f82aedf1206ebd4ef0  Root_fs2.vp/data/pxohelp.txt
+```
+
+## List files inside `.vp` file
+
+% ./fs2util -i Root_fs2.vp
+source:Root_fs2.vp file:data/tables/ai.tbl size:1874 bytes, offset:16 date:1999-10-28 07:14:14 +0000 UTC
+source:Root_fs2.vp file:data/tables/asteroid.tbl size:4309 bytes, offset:1890 date:1999-10-28 07:14:14 +0000 UTC
+source:Root_fs2.vp file:data/tables/credits.tbl size:8542 bytes, offset:6199 date:1999-11-01 20:09:40 +0000 UTC
+source:Root_fs2.vp file:data/tables/cutscenes.tbl size:2402 bytes, offset:14741 date:1999-10-28 07:14:14 +0000 UTC
+source:Root_fs2.vp file:data/tables/fireball.tbl size:531 bytes, offset:17143 date:1999-10-28 07:14:14 +0000 UTC
+source:Root_fs2.vp file:data/tables/help.tbl size:14099 bytes, offset:17674 date:1999-10-28 07:14:14 +0000 UTC
+source:Root_fs2.vp file:data/tables/hud.tbl size:800 bytes, offset:31773 date:1999-10-28 07:14:14 +0000 UTC
+source:Root_fs2.vp file:data/tables/icons.tbl size:14261 bytes, offset:32573 date:1999-10-28 07:14:14 +0000 UTC
+source:Root_fs2.vp file:data/tables/launchhelp.tbl size:4374 bytes, offset:46834 date:1999-10-28 07:14:16 +0000 UTC
+source:Root_fs2.vp file:data/tables/lightning.tbl size:5788 bytes, offset:51208 date:1999-10-28 07:14:16 +0000 UTC
+source:Root_fs2.vp file:data/tables/mainhall.tbl size:18121 bytes, offset:56996 date:1999-10-28 07:14:16 +0000 UTC
+source:Root_fs2.vp file:data/tables/medals.tbl size:1947 bytes, offset:75117 date:1999-10-28 07:14:16 +0000 UTC
+source:Root_fs2.vp file:data/tables/menu.tbl size:1962 bytes, offset:77064 date:1999-10-28 07:14:16 +0000 UTC
+source:Root_fs2.vp file:data/tables/messages.tbl size:34028 bytes, offset:79026 date:1999-10-28 07:14:16 +0000 UTC
+source:Root_fs2.vp file:data/tables/mflash.tbl size:597 bytes, offset:113054 date:1999-10-28 07:14:16 +0000 UTC
+source:Root_fs2.vp file:data/tables/music.tbl size:7287 bytes, offset:113651 date:1999-10-28 07:14:16 +0000 UTC
+source:Root_fs2.vp file:data/tables/nebula.tbl size:440 bytes, offset:120938 date:1999-10-28 07:14:16 +0000 UTC
+source:Root_fs2.vp file:data/tables/pixels.tbl size:81 bytes, offset:121378 date:1999-10-28 07:14:16 +0000 UTC
+source:Root_fs2.vp file:data/tables/rank.tbl size:3397 bytes, offset:121459 date:1999-10-28 07:14:16 +0000 UTC
+source:Root_fs2.vp file:data/tables/ships.tbl size:383719 bytes, offset:124856 date:1999-10-28 07:14:16 +0000 UTC
+source:Root_fs2.vp file:data/tables/sounds.tbl size:20735 bytes, offset:508575 date:1999-11-17 20:13:26 +0000 UTC
+source:Root_fs2.vp file:data/tables/Species.tbl size:16708 bytes, offset:529310 date:1999-10-28 07:14:16 +0000 UTC
+source:Root_fs2.vp file:data/tables/ssm.tbl size:45 bytes, offset:546018 date:1999-10-28 07:14:16 +0000 UTC
+source:Root_fs2.vp file:data/tables/stars.tbl size:1910 bytes, offset:546063 date:1999-10-28 07:14:16 +0000 UTC
+source:Root_fs2.vp file:data/tables/strings.tbl size:235241 bytes, offset:547973 date:1999-11-02 16:27:22 +0000 UTC
+source:Root_fs2.vp file:data/tables/tips.tbl size:4390 bytes, offset:783214 date:1999-10-28 07:14:16 +0000 UTC
+source:Root_fs2.vp file:data/tables/traitor.tbl size:665 bytes, offset:787604 date:1999-10-28 07:14:16 +0000 UTC
+source:Root_fs2.vp file:data/tables/tstrings.tbl size:984199 bytes, offset:788269 date:1999-11-11 21:07:26 +0000 UTC
+source:Root_fs2.vp file:data/tables/weapon_expl.tbl size:228 bytes, offset:1772468 date:1999-10-28 07:14:16 +0000 UTC
+source:Root_fs2.vp file:data/tables/weapons.tbl size:259791 bytes, offset:1772696 date:1999-10-28 07:14:16 +0000 UTC
+source:Root_fs2.vp file:data/tables/vssver.scc size:512 bytes, offset:2032487 date:1999-11-02 03:55:16 +0000 UTC
+source:Root_fs2.vp file:data/missions/G-Shi.fs2 size:43642 bytes, offset:2032999 date:1999-11-02 03:57:28 +0000 UTC
+source:Root_fs2.vp file:data/missions/G-Ter.fs2 size:43671 bytes, offset:2076641 date:1999-11-02 03:57:28 +0000 UTC
+source:Root_fs2.vp file:data/missions/G-Vas.fs2 size:42306 bytes, offset:2120312 date:1999-11-02 03:57:28 +0000 UTC
+source:Root_fs2.vp file:data/missions/loop1-1.fs2 size:59582 bytes, offset:2162618 date:1999-11-02 03:57:28 +0000 UTC
+source:Root_fs2.vp file:data/missions/loop1-2.fs2 size:114569 bytes, offset:2222200 date:1999-11-02 03:57:28 +0000 UTC
+source:Root_fs2.vp file:data/missions/loop1-3.fs2 size:58172 bytes, offset:2336769 date:1999-11-02 03:57:28 +0000 UTC
+source:Root_fs2.vp file:data/missions/loop2-1.fs2 size:61415 bytes, offset:2394941 date:1999-11-02 03:57:28 +0000 UTC
+source:Root_fs2.vp file:data/missions/loop2-2.fs2 size:84727 bytes, offset:2456356 date:1999-11-02 03:57:28 +0000 UTC
+source:Root_fs2.vp file:data/missions/M-01.fs2 size:31309 bytes, offset:2541083 date:1999-11-02 03:57:28 +0000 UTC
+source:Root_fs2.vp file:data/missions/M-02.fs2 size:41218 bytes, offset:2572392 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/M-03.fs2 size:59154 bytes, offset:2613610 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/M-04.fs2 size:38628 bytes, offset:2672764 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/MDH-01.fs2 size:17922 bytes, offset:2711392 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/MDH-02.fs2 size:17138 bytes, offset:2729314 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/MDH-03.fs2 size:17765 bytes, offset:2746452 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/MDH-04.fs2 size:17627 bytes, offset:2764217 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/MDH-05.fs2 size:19905 bytes, offset:2781844 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/MDH-06.fs2 size:17749 bytes, offset:2801749 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/MDH-07.fs2 size:13682 bytes, offset:2819498 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/mdH-08.fs2 size:15115 bytes, offset:2833180 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/mdH-09.fs2 size:17542 bytes, offset:2848295 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/MDL-01.fs2 size:17791 bytes, offset:2865837 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/MDL-02.fs2 size:16993 bytes, offset:2883628 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/MDL-03.fs2 size:17867 bytes, offset:2900621 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/MDL-04.fs2 size:17745 bytes, offset:2918488 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/MDL-05.fs2 size:20006 bytes, offset:2936233 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/MDL-06.fs2 size:17868 bytes, offset:2956239 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/MDL-07.fs2 size:13789 bytes, offset:2974107 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/mdL-08.fs2 size:15205 bytes, offset:2987896 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/mdL-09.fs2 size:17661 bytes, offset:3003101 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/MDM-01.fs2 size:18169 bytes, offset:3020762 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/MDM-02.fs2 size:17372 bytes, offset:3038931 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/MDM-03.fs2 size:18248 bytes, offset:3056303 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/MDM-04.fs2 size:18119 bytes, offset:3074551 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/MDM-05.fs2 size:20393 bytes, offset:3092670 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/MDM-06.fs2 size:18243 bytes, offset:3113063 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/MDM-07.fs2 size:14165 bytes, offset:3131306 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/mdM-08.fs2 size:15599 bytes, offset:3145471 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/mdM-09.fs2 size:18051 bytes, offset:3161070 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/MT-01.fs2 size:27140 bytes, offset:3179121 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/MT-02.fs2 size:26610 bytes, offset:3206261 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/MT-03.fs2 size:28498 bytes, offset:3232871 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/MT-04.fs2 size:17882 bytes, offset:3261369 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/MT-05.fs2 size:37392 bytes, offset:3279251 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/MT-06.fs2 size:15934 bytes, offset:3316643 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/MT-07.fs2 size:21556 bytes, offset:3332577 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/MT-08.fs2 size:17620 bytes, offset:3354133 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/MT-09.fs2 size:14388 bytes, offset:3371753 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/MT-10.fs2 size:19286 bytes, offset:3386141 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/OSDog.fs2 size:19388 bytes, offset:3405427 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/SM1-01.fs2 size:68242 bytes, offset:3424815 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/SM1-02.fs2 size:72067 bytes, offset:3493057 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/SM1-03.fs2 size:57855 bytes, offset:3565124 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/SM1-04.fs2 size:75736 bytes, offset:3622979 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/SM1-05.fs2 size:82941 bytes, offset:3698715 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/SM1-06.fs2 size:67908 bytes, offset:3781656 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/SM1-07.fs2 size:51290 bytes, offset:3849564 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/SM1-08.fs2 size:67506 bytes, offset:3900854 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/SM1-09.fs2 size:86239 bytes, offset:3968360 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/SM1-10.fs2 size:67658 bytes, offset:4054599 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/SM2-01.fs2 size:62708 bytes, offset:4122257 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/SM2-02.fs2 size:56674 bytes, offset:4184965 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/SM2-03.fs2 size:61816 bytes, offset:4241639 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/SM2-04.fs2 size:72553 bytes, offset:4303455 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/SM2-05.fs2 size:71511 bytes, offset:4376008 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/SM2-06.fs2 size:71655 bytes, offset:4447519 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/SM2-07.fs2 size:70704 bytes, offset:4519174 date:1999-11-04 20:52:28 +0000 UTC
+source:Root_fs2.vp file:data/missions/SM2-08.fs2 size:53983 bytes, offset:4589878 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/SM2-09.fs2 size:53565 bytes, offset:4643861 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/sm2-10.fs2 size:85760 bytes, offset:4697426 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/SM3-01.fs2 size:77854 bytes, offset:4783186 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/sm3-02.fs2 size:42113 bytes, offset:4861040 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/SM3-03.fs2 size:79484 bytes, offset:4903153 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/SM3-04.fs2 size:64871 bytes, offset:4982637 date:1999-11-02 03:57:30 +0000 UTC
+source:Root_fs2.vp file:data/missions/SM3-05.fs2 size:87235 bytes, offset:5047508 date:1999-11-02 03:57:32 +0000 UTC
+source:Root_fs2.vp file:data/missions/SM3-06.fs2 size:79601 bytes, offset:5134743 date:1999-11-02 03:57:32 +0000 UTC
+source:Root_fs2.vp file:data/missions/SM3-07.fs2 size:97275 bytes, offset:5214344 date:1999-11-02 03:57:32 +0000 UTC
+source:Root_fs2.vp file:data/missions/SM3-08.fs2 size:84092 bytes, offset:5311619 date:1999-11-02 03:57:32 +0000 UTC
+source:Root_fs2.vp file:data/missions/sm3-09.fs2 size:78558 bytes, offset:5395711 date:1999-11-02 03:57:32 +0000 UTC
+source:Root_fs2.vp file:data/missions/sm3-10.fs2 size:101883 bytes, offset:5474269 date:1999-11-02 03:57:32 +0000 UTC
+source:Root_fs2.vp file:data/missions/Templar-01.fs2 size:49062 bytes, offset:5576152 date:1999-11-02 03:57:32 +0000 UTC
+source:Root_fs2.vp file:data/missions/Templar-02.fs2 size:48699 bytes, offset:5625214 date:1999-11-02 03:57:32 +0000 UTC
+source:Root_fs2.vp file:data/missions/Templar-03.fs2 size:65106 bytes, offset:5673913 date:1999-11-02 03:57:32 +0000 UTC
+source:Root_fs2.vp file:data/missions/Templar-04.fs2 size:56363 bytes, offset:5739019 date:1999-11-02 03:57:32 +0000 UTC
+source:Root_fs2.vp file:data/missions/Training-1.fs2 size:35107 bytes, offset:5795382 date:1999-11-02 03:57:32 +0000 UTC
+source:Root_fs2.vp file:data/missions/Training-2.fs2 size:37616 bytes, offset:5830489 date:1999-11-02 03:57:32 +0000 UTC
+source:Root_fs2.vp file:data/missions/Training-3.fs2 size:38863 bytes, offset:5868105 date:1999-11-02 03:57:32 +0000 UTC
+source:Root_fs2.vp file:data/missions/TSM-104.fs2 size:51541 bytes, offset:5906968 date:1999-11-02 03:57:32 +0000 UTC
+source:Root_fs2.vp file:data/missions/TSM-105.fs2 size:28534 bytes, offset:5958509 date:1999-11-02 03:57:32 +0000 UTC
+source:Root_fs2.vp file:data/missions/TSM-106.fs2 size:46482 bytes, offset:5987043 date:1999-11-02 03:57:32 +0000 UTC
+source:Root_fs2.vp file:data/missions/FreeSpace2.fc2 size:12617 bytes, offset:6033525 date:1999-11-02 03:57:28 +0000 UTC
+source:Root_fs2.vp file:data/missions/Templar.fc2 size:2374 bytes, offset:6046142 date:1999-11-02 03:57:32 +0000 UTC
+source:Root_fs2.vp file:data/players/images/Ter0001.pcx size:11138 bytes, offset:6048516 date:1999-09-22 15:32:26 +0000 UTC
+source:Root_fs2.vp file:data/players/images/Ter0002.pcx size:9224 bytes, offset:6059654 date:1999-09-22 15:32:28 +0000 UTC
+source:Root_fs2.vp file:data/players/images/Ter0003.pcx size:10501 bytes, offset:6068878 date:1999-09-22 15:32:28 +0000 UTC
+source:Root_fs2.vp file:data/players/images/Ter0004.pcx size:11287 bytes, offset:6079379 date:1999-09-22 15:32:28 +0000 UTC
+source:Root_fs2.vp file:data/players/images/Ter0005.pcx size:11120 bytes, offset:6090666 date:1999-09-22 15:32:28 +0000 UTC
+source:Root_fs2.vp file:data/players/images/Ter0006.pcx size:12220 bytes, offset:6101786 date:1999-09-22 15:32:28 +0000 UTC
+source:Root_fs2.vp file:data/players/images/Ter0007.pcx size:10999 bytes, offset:6114006 date:1999-09-22 15:32:28 +0000 UTC
+source:Root_fs2.vp file:data/players/images/Ter0008.pcx size:11592 bytes, offset:6125005 date:1999-09-22 15:32:28 +0000 UTC
+source:Root_fs2.vp file:data/players/images/Ter0009.pcx size:10046 bytes, offset:6136597 date:1999-09-22 15:32:28 +0000 UTC
+source:Root_fs2.vp file:data/players/images/Vas0001.pcx size:12438 bytes, offset:6146643 date:1999-09-22 15:32:28 +0000 UTC
+source:Root_fs2.vp file:data/players/images/Vas0002.pcx size:12124 bytes, offset:6159081 date:1999-09-22 15:32:28 +0000 UTC
+source:Root_fs2.vp file:data/players/images/Vas0003.pcx size:12147 bytes, offset:6171205 date:1999-09-22 15:32:28 +0000 UTC
+source:Root_fs2.vp file:data/players/images/vssver.scc size:224 bytes, offset:6183352 date:1999-11-17 20:55:44 +0000 UTC
+source:Root_fs2.vp file:data/players/squads/242suicide.pcx size:8772 bytes, offset:6183576 date:1999-09-22 15:32:28 +0000 UTC
+source:Root_fs2.vp file:data/players/squads/77th.pcx size:6931 bytes, offset:6192348 date:1999-09-22 15:32:28 +0000 UTC
+source:Root_fs2.vp file:data/players/squads/barracudas.pcx size:12018 bytes, offset:6199279 date:1999-09-22 15:32:28 +0000 UTC
+source:Root_fs2.vp file:data/players/squads/DaBombInsig.pcx size:16783 bytes, offset:6211297 date:1999-09-22 15:32:30 +0000 UTC
+source:Root_fs2.vp file:data/players/squads/deathsquad.pcx size:12973 bytes, offset:6228080 date:1999-09-22 15:32:30 +0000 UTC
+source:Root_fs2.vp file:data/players/squads/desquad.pcx size:10287 bytes, offset:6241053 date:1999-09-22 15:32:30 +0000 UTC
+source:Root_fs2.vp file:data/players/squads/hammer1.pcx size:6269 bytes, offset:6251340 date:1999-09-22 15:32:30 +0000 UTC
+source:Root_fs2.vp file:data/players/squads/jollyroger.pcx size:8266 bytes, offset:6257609 date:1999-09-22 15:32:30 +0000 UTC
+source:Root_fs2.vp file:data/players/squads/lion1.pcx size:10232 bytes, offset:6265875 date:1999-09-22 15:32:30 +0000 UTC
+source:Root_fs2.vp file:data/players/squads/raptors.pcx size:11142 bytes, offset:6276107 date:1999-09-22 15:32:30 +0000 UTC
+source:Root_fs2.vp file:data/players/squads/ravens.pcx size:10219 bytes, offset:6287249 date:1999-09-22 15:32:30 +0000 UTC
+source:Root_fs2.vp file:data/players/squads/rgrdgr1.pcx size:8970 bytes, offset:6297468 date:1999-09-22 15:32:30 +0000 UTC
+source:Root_fs2.vp file:data/players/squads/rgrdgr2.pcx size:7850 bytes, offset:6306438 date:1999-09-22 15:32:30 +0000 UTC
+source:Root_fs2.vp file:data/players/squads/scorpsquada.pcx size:7810 bytes, offset:6314288 date:1999-09-22 15:32:30 +0000 UTC
+source:Root_fs2.vp file:data/players/squads/scorpsquadb.pcx size:10641 bytes, offset:6322098 date:1999-09-22 15:32:30 +0000 UTC
+source:Root_fs2.vp file:data/players/squads/scorpsquadc.pcx size:9471 bytes, offset:6332739 date:1999-09-22 15:32:30 +0000 UTC
+source:Root_fs2.vp file:data/players/squads/scorpsquadd.pcx size:7117 bytes, offset:6342210 date:1999-09-22 15:32:30 +0000 UTC
+source:Root_fs2.vp file:data/players/squads/sheepsquad.pcx size:9669 bytes, offset:6349327 date:1999-09-22 15:32:30 +0000 UTC
+source:Root_fs2.vp file:data/players/squads/skullsquada.pcx size:7678 bytes, offset:6358996 date:1999-09-22 15:32:30 +0000 UTC
+source:Root_fs2.vp file:data/players/squads/tsusquad.pcx size:11214 bytes, offset:6366674 date:1999-09-22 15:32:30 +0000 UTC
+source:Root_fs2.vp file:data/players/squads/vasudan1.pcx size:7212 bytes, offset:6377888 date:1999-09-22 15:32:30 +0000 UTC
+source:Root_fs2.vp file:data/players/squads/volsquad.pcx size:7347 bytes, offset:6385100 date:1999-09-22 15:32:30 +0000 UTC
+source:Root_fs2.vp file:data/players/squads/vssver.scc size:384 bytes, offset:6392447 date:1999-11-17 20:55:44 +0000 UTC
+source:Root_fs2.vp file:data/pxohelp.txt size:4095 bytes, offset:6392831 date:1999-09-22 15:17:30 +0000 UTC
 ```
