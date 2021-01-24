@@ -12,6 +12,7 @@ import (
 	"time"
 )
 
+// Header
 type RawHeader struct {
 	Magic           [4]byte // VPVP
 	Version         uint32  // 2
@@ -19,13 +20,15 @@ type RawHeader struct {
 	EntryCount      uint32
 }
 
+// File entry
 type RawFileEntry struct {
 	Offset        uint32
 	Size          uint32
 	FileName      [32]byte // null-terminated
-	UnixTimeStamp uint32
+	UnixTimeStamp uint32   // https://en.wikipedia.org/wiki/Unix_time
 }
 
+// File in more human readable form
 type File struct {
 	Path     string
 	FileName string
@@ -43,7 +46,7 @@ type Inspector struct {
 	f           io.ReadSeeker
 	header      RawHeader
 	files       []File
-	checksummer hash.Hash
+	checksummer hash.Hash // checksummer to be used (sha1, sha256, md5, ...)
 }
 
 func New(f io.ReadSeeker, checksummer hash.Hash) Inspector {
@@ -59,11 +62,13 @@ func (i *Inspector) ReadFile() error {
 		return err
 	}
 
+	// Check header
 	hdr := string(i.header.Magic[:])
 	if hdr != `VPVP` {
 		return fmt.Errorf(`invalid header: %q`, hdr)
 	}
 
+	// Check version
 	if i.header.Version != 2 {
 		return fmt.Errorf(`invalid version: %d`, i.header.Version)
 	}
