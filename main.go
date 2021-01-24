@@ -25,6 +25,7 @@ var (
 const (
 	AUTHOR   = `Pekka Järvinen`
 	HOMEPAGE = `https://github.com/raspi/fs2util`
+	YEAR     = 2021
 )
 
 var checksummers = map[string]hash.Hash{
@@ -53,7 +54,8 @@ func main() {
 	flag.Usage = func() {
 		f := os.Args[0]
 		_, _ = fmt.Fprintf(os.Stdout, `fs2util - Inspect FreeSpace 2 .VP file`+"\n")
-		_, _ = fmt.Fprintf(os.Stdout, `(c) %v 2019- [ %v ]`+"\n", AUTHOR, HOMEPAGE)
+		_, _ = fmt.Fprintf(os.Stdout, `Version %v %v %v`+"\n", VERSION, BUILD, BUILDDATE)
+		_, _ = fmt.Fprintf(os.Stdout, `(c) %v %v- [ %v ]`+"\n", AUTHOR, YEAR, HOMEPAGE)
 		_, _ = fmt.Fprintf(os.Stdout, "\n")
 
 		_, _ = fmt.Fprintf(os.Stdout, "Parameters:\n")
