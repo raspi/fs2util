@@ -375,8 +375,9 @@ ab0f42fb8c44c685d506dfbb1efc83ab183c307cd19e4d0127972bf521e98ffd  Root_fs2.vp/da
 cf73ca95128cff5569f88faedf731e5c434778b2874144f82aedf1206ebd4ef0  Root_fs2.vp/data/pxohelp.txt
 ```
 
-## List files inside `.vp` file
+## List files inside `.vp` file:
 
+```
 % ./fs2util -i Root_fs2.vp
 source:Root_fs2.vp file:data/tables/ai.tbl size:1874 bytes, offset:16 date:1999-10-28 07:14:14 +0000 UTC
 source:Root_fs2.vp file:data/tables/asteroid.tbl size:4309 bytes, offset:1890 date:1999-10-28 07:14:14 +0000 UTC
