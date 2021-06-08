@@ -1,4 +1,9 @@
 # fs2util
+
+![GitHub All Releases](https://img.shields.io/github/downloads/raspi/fs2util/total?style=for-the-badge)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/raspi/fs2util?style=for-the-badge)
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/raspi/fs2util?style=for-the-badge)
+
 FreeSpace 2 util for command line
 
 * Extract files inside `.VP` file
